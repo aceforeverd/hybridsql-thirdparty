@@ -211,7 +211,6 @@ ExternalProject_Add(
   DOWNLOAD_DIR ${DEPS_DOWNLOAD_DIR}/zookeeper
   INSTALL_DIR ${DEPS_PREFIX}
   BINARY_DIR ${DEPS_BUILD_DIR}/src/zookeeper/zookeeper-client/zookeeper-client-c
-  BUILD_IN_SOURCE TRUE
   CONFIGURE_COMMAND autoreconf -if
     COMMAND ./configure --prefix="${DEPS_PREFIX}"
   BUILD_COMMAND ${MAKE_EXE}
